@@ -1,1 +1,40 @@
-<div style="color:red;">hello world</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulting Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Tabs for navigation -->
+        <div class="tab-container">
+            <button class="tab-button active" onclick="openTab('about')">About Me</button>
+            <button class="tab-button" onclick="openTab('services')">Services</button>
+            <button class="tab-button" onclick="openTab('pricing')">Pricing</button>
+            <button class="tab-button" onclick="openTab('contact')">Contact</button>
+        </div>
+
+        <!-- Content sections -->
+        <div id="about" class="tab-content active">
+            <h1>About Me</h1>
+            <p>Brief introduction and expertise in technology consulting...</p>
+        </div>
+        <div id="services" class="tab-content">
+            <h1>Services</h1>
+            <p>Overview of services offered, including tech and SaaS consulting...</p>
+        </div>
+        <div id="pricing" class="tab-content">
+            <h1>Pricing</h1>
+            <p>Details about pricing and packages...</p>
+        </div>
+        <div id="contact" class="tab-content">
+            <h1>Contact</h1>
+            <p>Contact form or information for inquiries...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
