@@ -1,0 +1,66 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Main container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #242933; /* Dark, vibrant gray */
+}
+
+/* Tabs container */
+.tab-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Updated tab button style */
+.tab-button {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid transparent;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: border-color 0.3s ease, color 0.3s ease;
+    position: relative;
+}
+
+/* Hover effect: bold and bright */
+.tab-button:hover {
+    border-color: #ff6f3c; /* Bright, punchy orange */
+    color: #ff6f3c; /* Matching orange text */
+}
+
+/* Active tab */
+.tab-button.active {
+    border-color: #ff6f3c;
+    color: #ff6f3c;
+}
+
+/* Content area */
+.tab-content {
+    display: none;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    background-color: #333846; /* Punchy dark gray */
+    border-radius: 10px;
+}
+
+/* Show the active content */
+.tab-content.active {
+    display: block;
+}
